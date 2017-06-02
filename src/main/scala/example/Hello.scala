@@ -13,7 +13,7 @@ import example.bean.KeyValue
 object Hello extends Greeting with App {
   println(greeting)
 
-  //read file 1M
+  //read file 1M ...
   val source = Source.fromFile("/home/zhangdi/NetDisk/delete/z20170523/szdsp-kv/split/D1.txt","UTF-8") 
   
   val lineIterator = source.getLines
