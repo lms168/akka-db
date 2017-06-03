@@ -4,9 +4,7 @@
 
 ### Run in local as a developer
 
-config:
-
-src/main/resources/application.conf:
+config:`src/main/resources/application.conf`:
 
 ```config
 main {
