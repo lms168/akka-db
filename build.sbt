@@ -13,7 +13,7 @@ mappings in Universal ++= {
 addCommandAlias("pkg", ";universal:packageZipTarball")
 
 //Config - Root
-lazy val root = (project in file(".")).settings(name := "adx-etl", commonSettings, librarySettings)
+lazy val root = (project in file(".")).settings(name := "sbt-template", commonSettings, librarySettings)
 
 lazy val commonSettings = Seq(
   organization := "com.zzcm.adx",
