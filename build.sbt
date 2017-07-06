@@ -27,7 +27,8 @@ lazy val librarySettings = {
     "org.slf4j" % "slf4j-nop" % "1.6.4",
     "com.typesafe.slick" %% "slick-hikaricp" % "3.2.0",
     "mysql" % "mysql-connector-java" % "5.1.18",
-    "com.typesafe" % "config" % "1.2.1"
+    "com.typesafe" % "config" % "1.2.1",
+    "net.debasishg" %% "redisclient" % "3.4"
   )
 }
 

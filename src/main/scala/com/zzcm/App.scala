@@ -1,9 +1,9 @@
 package com.zzcm
 
-import example.Hello
+import example.SentCheckRedis
 
 object App extends App {
 
-  Hello.main(args)
+  SentCheckRedis.main(args)
 
 }
