@@ -28,10 +28,10 @@ $ Enter number: 1
 
 ```bash
 $ cd sbt-template
-$ sbt pkg -Dconf=local              #[dev] build target/universal/sbt-template-0.1.0.tgz
-$ sbt pkg -Dconf=test               #[test] build target/universal/sbt-template-0.1.0.tgz
-$ sbt pkg -Dconf=product            #[online] build target/universal/sbt-template-0.1.0.tgz
-$ sbt pkg -Dconf=public             #[onlinetest] build target/universal/sbt-template-0.1.0.tgz
+$ sbt -Dconf=local pkg              #[dev] build target/universal/sbt-template-0.1.0.tgz
+$ sbt -Dconf=test pkg               #[test] build target/universal/sbt-template-0.1.0.tgz
+$ sbt -Dconf=product pkg            #[online] build target/universal/sbt-template-0.1.0.tgz
+$ sbt -Dconf=public pkg             #[onlinetest] build target/universal/sbt-template-0.1.0.tgz
 
 ```
 

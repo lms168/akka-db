@@ -10,6 +10,14 @@ mappings in Universal ++= {
     f -> s"config/${f.name}"
   }
 }
+mappings in (Compile, packageBin) ~= { (ms: Seq[(File, String)]) =>
+  ms filter {
+    case (file, toPath)  =>{
+      !file.getAbsolutePath.endsWith("application.conf")
+    }
+  }
+}
+
 addCommandAlias("pkg", ";universal:packageZipTarball")
 
 //Config - Root
