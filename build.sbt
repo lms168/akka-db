@@ -26,7 +26,7 @@ lazy val root = (project in file(".")).settings(name := "sbt-template", commonSe
 lazy val commonSettings = Seq(
   organization := "com.zzcm.adx",
   scalaVersion := "2.11.8",
-  version      := "0.1.0"
+  version      := "1.0.1"
 )
 
 lazy val librarySettings = {
