@@ -3,7 +3,7 @@ variables:
 
 local:
   script:
-    - sbt -Dconf=local clean pkg
+    - sbt -Dconf=local clean pkg 
     - pwd
     - rm -rf /home/output/$PROJECT_NAME/local
     - mkdir -p /home/output/$PROJECT_NAME/local
