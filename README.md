@@ -1,4 +1,4 @@
-# Sbt-Template
+# akka-db
 
 ## Getting started
 
