@@ -21,7 +21,7 @@ mappings in (Compile, packageBin) ~= { (ms: Seq[(File, String)]) =>
 addCommandAlias("pkg", ";universal:packageZipTarball")
 
 //Config - Root
-lazy val root = (project in file(".")).settings(name := "sbt-template", commonSettings, librarySettings)
+lazy val root = (project in file(".")).settings(name := "akka-db", commonSettings, librarySettings)
 
 lazy val commonSettings = Seq(
   organization := "com.zzcm.adx",
@@ -36,7 +36,11 @@ lazy val librarySettings = {
     "com.typesafe.slick" %% "slick-hikaricp" % "3.2.0",
     "mysql" % "mysql-connector-java" % "5.1.18",
     "com.typesafe" % "config" % "1.2.1",
-    "net.debasishg" %% "redisclient" % "3.4"
+    "net.debasishg" %% "redisclient" % "3.4",
+    "com.typesafe.akka" %% "akka-actor" % "2.3.6",
+    "com.typesafe.akka" %% "akka-testkit" % "2.3.6" % "test",
+    "org.scalatest" %% "scalatest" % "2.1.6" % "test"
+
   )
 }
 
